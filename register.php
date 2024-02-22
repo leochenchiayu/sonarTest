@@ -18,7 +18,7 @@
     } else {
         echo "錯誤: " . $sql . "<br>" . $conn->error;
     }
-
+//
     $conn->close();
 }*/
 ?>
