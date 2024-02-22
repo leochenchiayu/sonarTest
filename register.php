@@ -1,15 +1,15 @@
 <?php
-if (isset($_POST['register'])) {
-    // 連接到數據庫
+/*if (isset($_POST['register'])) {
+    
     $conn = new mysqli('localhost', 'fdjk', 'eeee', 'lloig');
 
-    // 檢查連接
+    
     if ($conn->connect_error) {
         die("連接失敗:: " . $conn->connect_error);
     }
 
     $username = $conn->real_escape_string($_POST['username']);
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // 對密碼進行加密
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
 
     $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 
@@ -20,7 +20,7 @@ if (isset($_POST['register'])) {
     }
 
     $conn->close();
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html>
