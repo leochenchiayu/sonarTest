@@ -20,6 +20,11 @@ if (isset($_POST['register'])) {
     }
 
     $conn->close();
+    $password="iamleo"
+    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 }
 ?>
 <!DOCTYPE html>
