@@ -5,7 +5,7 @@ if (isset($_POST['register'])) {
 
     // 檢查連接
     if ($conn->connect_error) {
-        die("連接失敗: " . $conn->connect_error);
+        die("連接失敗:: " . $conn->connect_error);
     }
 
     $username = $conn->real_escape_string($_POST['username']);
