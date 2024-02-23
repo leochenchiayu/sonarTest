@@ -1,5 +1,5 @@
 <?php
-/*if (isset($_POST['register'])) {
+if (isset($_POST['register'])) {
     
     $conn = new mysqli('localhost', 'fdjk', 'eeee', 'lloig');
 
@@ -9,9 +9,9 @@
     }
 
     $username = $conn->real_escape_string($_POST['username']);
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
-
-    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+    //$password = password_hash($_POST['password'], PASSWORD_DEFAULT); 
+    
+    $sql = "INSERT INTO users (username, password) VALUES ('$username', '494fjkl')";
 
     if ($conn->query($sql) === TRUE) {
         echo "新記錄創建成功";
@@ -20,7 +20,20 @@
     }
 //
     $conn->close();
+}
 
+var s = 10;
+echo s;
+
+$userInput = $_GET['userInput'];
+
+
+$unsafeSql = "SELECT * FROM users WHERE username = '$userInput'";
+
+echo "您的輸入是: " . $userInput;
+
+$userPassword = 'examplePassword';    
+    
 ?>
 <!DOCTYPE html>
 <html>
