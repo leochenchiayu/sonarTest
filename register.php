@@ -20,11 +20,6 @@
     }
 //
     $conn->close();
-}*/
-
-$password = "XXX";
-$username = "XXX";
-$sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 
 ?>
 <!DOCTYPE html>
