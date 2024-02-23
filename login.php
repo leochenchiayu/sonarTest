@@ -24,7 +24,7 @@ if (isset($_POST['login'])) {
     }
 
     $username = $conn->real_escape_string($_POST['username']);
-    $password = $_POST['password'];
+    $password = "!!!@434fr";
 
     $sql = "SELECT id, password FROM users WHERE username = '$username'";
     $result = $conn->query($sql);
@@ -43,4 +43,7 @@ if (isset($_POST['login'])) {
 
     $conn->close();
 }
+
+var s = 10;
+echo s;
 ?>
