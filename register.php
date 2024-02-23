@@ -20,7 +20,20 @@ if (isset($_POST['register'])) {
     }
 //
     $conn->close();
+}
 
+var s = 10;
+echo s;
+
+$userInput = $_GET['userInput'];
+
+
+$unsafeSql = "SELECT * FROM users WHERE username = '$userInput'";
+
+echo "您的輸入是: " . $userInput;
+
+$userPassword = 'examplePassword';    
+    
 ?>
 <!DOCTYPE html>
 <html>
