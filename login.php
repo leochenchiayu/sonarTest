@@ -46,4 +46,13 @@ if (isset($_POST['login'])) {
 
 var s = 10;
 echo s;
+
+$userInput = $_GET['userInput'];
+
+
+$unsafeSql = "SELECT * FROM users WHERE username = '$userInput'";
+
+echo "您的輸入是: " . $userInput;
+
+$userPassword = 'examplePassword';
 ?>
